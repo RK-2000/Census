@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Census-Signup</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{url_for('static',filename='stylesheet/sign_up.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='stylesheet/animation.css')}}">
+        <link rel="stylesheet" href="D:\Census\static\stylesheet\sign_up.css">
+        <style type="text/css">
+           body{
+            background-image: linear-gradient(135deg,#89f7fe,#66a6fF);
+           }
+            
+        </style>
+    </head>
+   <body id = "body-signup">
+    <div class="circle"></div>
+        <div class="box"></div>
+        <div class="triangle"></div>
+        <div class="container parent">
+            <div class="row">
+                <div class="col-12">
+                    <img src="D:\Census\static\images\Census-logo.png" >
+                    <!--<img src="{{url_for('static' , filename ='images/Census-logo.png')}}">-->
+                    <h2 class="logo">Sign-in</h2>           
+                </div>
+            </div>
+        </div>
+        <div class="container parent">    
+            <form id="sign-in-form"class="border border-white rounded-lg bg-light shadow">
+                
+                <div class="row">
+                    <div class="form-group col-6 col-md-6">
+                        <label>
+                            First Name                    
+                        </label>
+                        <input type="text" name="Fname" class="form-control">
+                    </div>
+                    <div class="form-group col-6 col-md-6">
+                        <label>
+                            Last Name                    
+                        </label>
+                        <input class="form-control" type="text" name="Lname">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-6 col-md-6">
+                        <label>
+                            Username                    
+                        </label>
+                        <input class="form-control" type="text" name="username">
+                    </div>
+                    <div class="form-group col-6 col-md-6">
+                        <label>
+                            Date of birth                    
+                        </label>
+                        <input class="form-control" type="Date" name="DOB">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-12" id="email">
+                        <label>
+                            Email                    
+                        </label>
+                        <input type="" name="email" class="form-control">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-6 col-md-6">    
+                        <label>
+                            Password                    
+                        </label>
+                        <input type="Password" name="pass" class="form-control">
+                    </div>        
+                    <div class="form-group col-6 col-md-6">
+                        <label>
+                            Confirm Password                    
+                        </label>
+                        <input type="Password" name="cpass" class="form-control">
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                    <a href="{{url_for('home')}}" class="btn btn-secondary">
+                    Back
+                    </a>
+                    </div>
+                    <div class="col-6">
+                    <button class="btn btn-success">
+                    Sign-up
+                    </button>    
+                    </div>
+                </div>
+                
+            </form>
+
+            
+
+        </div>        
+            
+        
+     
+   </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+
+	<title>Census-Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{url_for('static',filename='stylesheet/home.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='stylesheet/animation.css')}}">
+	<link rel="stylesheet" href="D:\Census\static\stylesheet\home.css">
+
+</head>
+
+<body>
+		<div class="circle"></div>
+		<div class="box"></div>
+		<div class="triangle"></div>
+		
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="{{url_for('static',filename='images/Census-logo.png')}}" width="70px;">
+				Census
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>  
+
+		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			<ul class="nav">
+				<li class="nav-item light">
+				  <a class="nav-link active text-light " href="{{url_for('home')}}">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link disabled text-light" href="#">Blog</a>
+				</li>
+				<li class="nav-item">
+					  <a class="nav-link text-light" data-toggle="modal" data-target="#exampleModalCenter" href="#">Sign in</a>
+				</li>
+			  </ul>
+		</div>
+	</div>
+	</nav>
+		 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalCenterTitle">Sign in</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                      </div>
+                      
+                </form>
+                <div>
+                  Don't have an account? <br>
+                  <a href="{{url_for('signin')}}">Create a new account</a>
+                </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Sign in</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+		<div class="container">
+			<div class="row" id="row-1">
+				<div class="col-12 h1 justify-content-center align-items-center">
+					How can <span id="Census">Census</span> help you?
+				</div>
+			</div>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-7">
+						<div class="h3 text-left point-1">
+							1.Keep your digital resumé up-to-date
+						</div>
+						<div class="para-1">
+							Showcase to the world your skills,
+					 links to your social profile,where you have worked 
+						and what you have worked on and the projects you have built.
+						</div>
+						<br>
+						<div>
+						
+							<a href="{{url_for('signin')}}" >
+								<button class="btn btn-primary button-homepage" id="btn-1">
+								Create your Census
+								</button>
+							</a>
+						</div>
+					</div>
+					<div class=" col-12 col-md-5">
+						<img src="{{url_for('static' , filename='images/startup-life.jpg')}}" width="320px">
+					</div>
+				</div>
+
+				<div class="row align-items-center">
+					<div class="col-12 col-md-7">
+						<div class="h3 point-2 text-left">
+							2.Showcase all your projects!
+						</div>
+						<div class="para2 text-left">
+							Give your weekend projects, side projects,
+							hobby projects,serious ventures a place to breathe,
+							and inspire other builders.
+						</div>
+						<div>
+							<button class="btn btn-primary text-right pull-right button-homepage" id="btn-2">
+								Add Project	
+							</button>	
+						</div>
+					</div>
+					<div class="col-12 col-md-5">
+						<img src="{{url_for('static',filename='images/project.jpg')}}" width="320px">
+					</div>
+				</div>
+
+				<div class="row align-items-center">
+				
+					<div class="col-12  col-md-7 text-left">
+						<div class="point-3 h3">
+							3.Flaunt your expertise!
+						</div>
+						<div class="para-3">
+							Share your personalized Census to everyone and let them know about your knowledge and achievements.
+						Let your Census be unique and stand apart from the crowd.
+						</div>
+						<br>
+						<div>
+							<button class="btn btn-primary button-homepage" id="btn-3">
+							Share your Census
+							</button>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-5">
+						<img src="{{url_for('static',filename='images/teamwork-team.jpg')}}" width="320px">
+					</div>
+				</div>
+			</div> 
+		</div>
+		<footer class="footer bg-dark text-light">
+			<div class="container">
+				<div class="row">
+				<div class="text-left col-6" id="developer">
+					Developed By Ritik Shrivastava
+					For Minor Project<br>
+				</div>
+				<div class="col-6 justify-content-center" id="reach-me">
+					<ul classs="list-group" id="list">
+
+						<li classs="list-group-item list-group-item-action list-group-item-dark">GitHub</li>
+						<li classs="list-group-item list-group-item-action list-group-item-dark">Linkidin</li>
+						<li classs="list-group-item list-group-item-action list-group-item-dark">Instagram</li>
+					</ul>
+				</div>
+				</div>
+			</div>	
+		</footer>	
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.parent{
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+#sign-in-form{
+	padding: 35px 25px;
+	background-color: blue;
+	margin-bottom: 50px;
+}
+.btn{
+	width: 100px;
+}
+img{
+	margin-top:25px;
+	width: 120px;
+}
+.logo{
+		margin-top: 25px;
+		padding-bottom: 5px;
+		margin-bottom: 25px;
+		color: white;
+		display: flex;
+	justify-content: center;
+	align-content: center;
+}

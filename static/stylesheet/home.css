@@ -1,0 +1,66 @@
+
+#navbar-main{
+	background-color: cyan;
+	color: cornsilk;
+}
+
+#brand-name{
+	margin-left: 15px;
+	font-size: 30px;
+}
+.active{
+	border-bottom-width: 2px;
+	border-color: #EAEAEA;
+}
+#question{
+	margin-top: 60px;
+	font-size: 10px;
+	margin-bottom: 60px;
+	color:#121212;
+	font-family:'Corbert Condensed Italic';
+	}
+.point-1,.point-2,.point-3{
+	margin-top:80px;
+	margin-bottom: 20px;;
+}
+.button-homepage{
+	width: 180px;
+	font-style: normal;
+	border-width: 2px;
+	border-radius: 4px;
+	margin-bottom: 40px;
+}
+.button-homepage:hover{
+	border-color: #EAEAEA;
+	border-radius: 4px;
+	text-decoration-style: none;
+}
+#btn-2{
+	margin-top: 18px;
+	text-align-last: center;
+}
+.footer{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#list{
+	align-self: center;
+	text-align: left;
+	list-style: none;
+}
+#developer{
+	text-align: center;
+}
+#Census{
+	color:rgb(107, 98, 230);
+	border-bottom:2px solid cadetblue;
+}
+.navbar-brand{
+	color: linear-gradient(180deg , #df2727 , #bb0000);
+}
+#row-1{
+	margin-top: 50px;
+}
+.nav-item{
+	color: #EAEAEA;
+}
